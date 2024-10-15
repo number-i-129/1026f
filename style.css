@@ -9,10 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #eff1f7;
     margin: 0;
-    padding: 10px; /* 画面端の余白を減らす */
 }
 
 header {
