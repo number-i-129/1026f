@@ -14,6 +14,7 @@ body {
     flex-direction: column; /* 縦に並べる */
     justify-content: center; /* 中央揃え */
     align-items: center; /* 中央揃え */
+    height: 88vh;
     background-color: #eff1f7; /* 背景色 */
 }
 header {
