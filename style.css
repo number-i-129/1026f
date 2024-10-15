@@ -31,7 +31,7 @@ header a {
 }
 
 header h1 {
-    font-size: 18px;
+    font-size: 16px;
     flex-grow: 1; /* タイトルが中央に来るように */
     text-align: center;
     margin-left: -15px;
@@ -116,8 +116,9 @@ h2 {
 
 }
 .ticket-info p {
-    margin: 5px 1px 3px 0;
-    font-size: 14px;
+    margin: 4px 0px 6px 2px;
+    font-size: 15px;
+    font-waight: lighter;
     text-align: left;
 }
 .ticket-image img {
