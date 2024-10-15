@@ -25,13 +25,13 @@ header {
 }
 
 header a {
-    font-size: 15px;
+    font-size: 17px;
     color: #007AFF;
     text-decoration: none;
 }
 
 header h1 {
-    font-size: 15px;
+    font-size: 18px;
     flex-grow: 1; /* タイトルが中央に来るように */
     text-align: center;
     margin-left: -15px;
@@ -53,6 +53,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-weight: bold;
     margin-bottom: 6px; 
 }
 
@@ -69,6 +70,7 @@ h2 {
     border-radius: 15px;
     width: 350px; /* 横幅を小さくするために追加 */
     margin: 0 auto; /* 中央揃え */
+    height: 355px;
 }
 
 .circle {
@@ -85,13 +87,13 @@ h2 {
 .info-text {
     font-size: 13px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 .info-text .time {
-    font-size: 12px;
+    font-size: 13px;
     color: #333;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 .warning {
@@ -101,10 +103,9 @@ h2 {
     font-size: 10px;
     color: #000105;
     margin-top: 9px;
-    padding: 1px;
+    padding: 4px;
     border: 1px solid #ffded4;
     background-color: #bac6e1;
-    border-radius: 5px;
 }
 
 .warning-icon {
