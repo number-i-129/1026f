@@ -9,6 +9,15 @@
 </head>
   <script src="script.js"></script>
 <body>
+      <!-- パスワード入力フォーム -->
+    <div id="password-screen" style="text-align: center; margin-top: 100px;">
+        <h2>パスワードを入力してください</h2>
+        <input type="password" id="password-input" placeholder="パスワード">
+        <button onclick="checkPassword()">確認</button>
+        <p id="error-message" style="color: red; display: none;">パスワードが違います。</p>
+    </div>
+
+    <!-- コンテンツ（パスワード保護される部分） -->
     <div class="container">
         <header>
             <a href="#">&lt; 戻る</a>
@@ -40,3 +49,32 @@
     <p>2024年10月26日（土）</p>
     <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/x/xxsho129/20241012/20241012084524.jpg" alt="Ticket Image" class="ticket-image">
 </div>
+
+    <script>
+        // 簡易パスワードチェック
+        function checkPassword() {
+            const inputPassword = document.getElementById("password-input").value;
+            const correctPassword = "09090129"; // 正しいパスワード（ここを変更可能）
+
+            if (inputPassword === correctPassword) {
+                document.getElementById("password-screen").style.display = "none"; // パスワード画面を非表示
+                document.getElementById("protected-content").style.display = "block"; // コンテンツを表示
+            } else {
+                document.getElementById("error-message").style.display = "block"; // エラーメッセージ表示
+            }
+        }
+
+        // 時刻表示の機能を継続
+        window.onload = function() {
+            function updateTime() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                document.querySelector('.time').textContent = timeString;
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+        };
+    </script>
+
+</body>
+</html>
