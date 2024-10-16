@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  　<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>入場デザイン</title>
     <link rel="stylesheet" href="style.css">
 </head>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 <body>
-      <!-- パスワード入力フォーム -->
+    <!-- パスワード入力フォーム -->
     <div id="password-screen" style="text-align: center; margin-top: 100px;">
         <h2>パスワードを入力してください</h2>
         <input type="password" id="password-input" placeholder="パスワード">
@@ -18,7 +18,7 @@
     </div>
 
     <!-- コンテンツ（パスワード保護される部分） -->
-    <div class="container">
+    <div id="protected-content" class="container" style="display: none;">
         <header>
             <a href="#">&lt; 戻る</a>
             <h1>入場</h1>
@@ -39,16 +39,18 @@
                 <p class="time">12:17:38</p>
                <div class="warning">
                  <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/x/xxsho129/20241015/20241015112220.png" alt="Warning Icon" class="warning-icon">
-            <p>スクリーンショットでは入場できません</p>
-        </div>
+                 <p>スクリーンショットでは入場できません</p>
+               </div>
             </div>
         </div>
-       
-       <div class="ticket-box">
-         <div class="ticket-info">
-    <p>2024年10月26日（土）</p>
-    <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/x/xxsho129/20241012/20241012084524.jpg" alt="Ticket Image" class="ticket-image">
-</div>
+
+        <div class="ticket-box">
+            <div class="ticket-info">
+                <p>2024年10月26日（土）</p>
+                <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/x/xxsho129/20241012/20241012084524.jpg" alt="Ticket Image" class="ticket-image">
+            </div>
+        </div>
+    </div>
 
     <script>
         // 簡易パスワードチェック
